@@ -1,0 +1,5 @@
+lua-resty-core (0.1.22-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: 1016053)
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 26 Jul 2022 08:53:54 +0200
