@@ -1,4 +1,4 @@
-lua-resty-core (0.1.22-1) UNRELEASED; urgency=medium
+lua-resty-core (0.1.23-1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: 1016053)
 
