@@ -1,7 +1,8 @@
 Source: lua-resty-core
 Section: net
 Priority: optional
-Build-Depends: debhelper-compat (= 13), dh-lua
+Build-Depends: debhelper-compat (= 13),
+               dh-lua,
 Maintainer: Jan Mojžíš <jan.mojzis@gmail.com>
 Homepage: https://github.com/openresty/lua-resty-core
 Standards-Version: 4.6.1
@@ -10,8 +11,11 @@ Vcs-Git: https://salsa.debian.org/lua-team/lua-resty-core.git
 Vcs-Browser: https://salsa.debian.org/lua-team/lua-resty-core
 
 Package: lua-resty-core
-Depends: ${misc:Depends}, ${shlibs:Depends}, lua-resty-lrucache, libluajit2-5.1-dev
-Provides: ${lua:Provides}
+Depends: libluajit2-5.1-dev,
+         lua-resty-lrucache,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Provides: ${lua:Provides},
 XB-Lua-Versions: ${lua:Versions}
 Architecture: all
 Description: New FFI-based Lua API for NGINX Lua module
