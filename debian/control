@@ -10,7 +10,7 @@ Vcs-Git: https://salsa.debian.org/lua-team/lua-resty-core.git
 Vcs-Browser: https://salsa.debian.org/lua-team/lua-resty-core
 
 Package: lua-resty-core
-Depends: ${misc:Depends}, ${shlibs:Depends}, lua-resty-lrucache
+Depends: ${misc:Depends}, ${shlibs:Depends}, lua-resty-lrucache, libluajit2-5.1-dev
 Provides: ${lua:Provides}
 XB-Lua-Versions: ${lua:Versions}
 Architecture: all
