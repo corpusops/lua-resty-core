@@ -1,4 +1,4 @@
-lua-resty-core (0.1.23-2) UNRELEASED; urgency=medium
+lua-resty-core (0.1.23-2) unstable; urgency=medium
 
   * d/control added dependency on libluajit2-5.1-2
 
