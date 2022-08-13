@@ -1,3 +1,9 @@
+lua-resty-core (0.1.23-3) UNRELEASED; urgency=medium
+
+  * d/t/nginxtest: added autopkgtest
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Sat, 13 Aug 2022 17:56:04 +0200
+
 lua-resty-core (0.1.23-2) unstable; urgency=medium
 
   * d/control added dependency on libluajit2-5.1-2
