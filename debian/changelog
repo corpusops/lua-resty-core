@@ -1,4 +1,4 @@
-lua-resty-core (0.1.23-3) UNRELEASED; urgency=medium
+lua-resty-core (0.1.23-3) unstable; urgency=medium
 
   * d/t/nginxtest: added autopkgtest
 
