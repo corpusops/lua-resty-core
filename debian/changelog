@@ -1,4 +1,4 @@
-lua-resty-core (0.1.23-4) UNRELEASED; urgency=medium
+lua-resty-core (0.1.23-4) unstable; urgency=medium
 
   * d/t/control fixed test dependencies
   * d/t/nginxtest updated, added check if lua http module is installed,
