@@ -1,6 +1,11 @@
 #!/bin/sh
 set -e
 
+if [ ! -f /usr/lib/nginx/modules/ngx_http_lua_module.so ]; then
+  # Skip the test if ngx_http_lua_module.so doesn't exist
+  exit 77
+fi
+
 cat <<EOF > "/etc/nginx/sites-enabled/default"
 server {
   listen 80 default_server;
@@ -31,20 +36,6 @@ Header--Name
 Header-Name
 Hello world
 response_code: 200"
-
-cleanup() {
-  ex=$?
-  if [ "${ex}" -eq 0 ]; then
-    exit 0
-  fi
-  if [ x"`uname -m`" = xppcle ] || [ x"`uname -m`" = xppc64le ]; then
-    # When the test fails on on ppc64el architecture,
-    # skip the result, luajit2 library is broken on ppc64el.
-    exit 77
-  fi
-  exit "${ex}"
-}
-trap "cleanup" EXIT TERM INT
 
 nginx -t || :
 invoke-rc.d nginx restart
