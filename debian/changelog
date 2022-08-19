@@ -1,3 +1,9 @@
+lua-resty-core (0.1.23-4) UNRELEASED; urgency=medium
+
+  * d/t/control fixed test dependencies
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Fri, 19 Aug 2022 08:26:36 +0200
+
 lua-resty-core (0.1.23-3) unstable; urgency=medium
 
   * d/t/nginxtest: added autopkgtest

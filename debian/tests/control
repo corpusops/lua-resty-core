@@ -1,8 +1,4 @@
 Tests: nginxtest
 Restrictions: allow-stderr isolation-container needs-root skippable
 Depends: curl,
-         libnginx-mod-http-lua,
-         libnginx-mod-http-ndk,
-         nginx,
-         nginx-common,
-         nginx-core,
+         nginx-extras,
