@@ -1,3 +1,10 @@
+lua-resty-core (0.1.23-5) UNRELEASED; urgency=medium
+
+  * d/lua5.{2,3,4}.dh-lua.conf removed, lua-resty-core depends on LuaJIT2.
+    LuaJIT2 is API+ABI-compatible with Lua 5.1
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Sun, 04 Sep 2022 18:45:18 +0200
+
 lua-resty-core (0.1.23-4) unstable; urgency=medium
 
   * d/t/control fixed test dependencies
