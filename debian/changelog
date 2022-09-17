@@ -1,4 +1,4 @@
-lua-resty-core (0.1.24-1) UNRELEASED; urgency=medium
+lua-resty-core (0.1.24-1) unstable; urgency=medium
 
   * New upstream version 0.1.24.
   * d/t/nginxtest updated, the test is skipped if libnginx-mod-http-lua module
