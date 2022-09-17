@@ -36,7 +36,7 @@ response_code: 200"
 # e.g. libnginx-mod-http-lua doesn't exist on ppc64el
 apt-get -y install libnginx-mod-http-lua lua-resty-core || exit 77
 nginx -t || :
-invoke-rc.d nginx restart || exit 77
+invoke-rc.d nginx restart || { journalctl -n all -xu nginx.service; exit 77; }
 
 out=`curl --fail -w "response_code: %{http_code}\n" http://127.0.0.1/t`
 
