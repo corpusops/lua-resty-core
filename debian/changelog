@@ -1,6 +1,8 @@
 lua-resty-core (0.1.24-1) UNRELEASED; urgency=medium
 
   * New upstream version 0.1.24.
+  * d/t/nginxtest updated, the test is skipped if libnginx-mod-http-lua module
+    or lua-resty-core can't be installed
 
  -- Jan Mojžíš <jan.mojzis@gmail.com>  Sat, 17 Sep 2022 07:49:08 +0200
 
