@@ -1,6 +1,11 @@
 #!/bin/sh
 set -e
 
+if [ ! -f /usr/lib/nginx/modules/ngx_http_lua_module.so ]; then
+  # Skip the test if ngx_http_lua_module.so doesn't exist
+  exit 77
+fi
+
 cat <<EOF > "/etc/nginx/sites-enabled/default"
 server {
   listen 80 default_server;
@@ -32,11 +37,8 @@ Header-Name
 Hello world
 response_code: 200"
 
-# Skip the test if libnginx-mod-http-lua or lua-resty-core can't be installed
-# e.g. libnginx-mod-http-lua doesn't exist on ppc64el
-apt-get -y install libnginx-mod-http-lua lua-resty-core || exit 77
-nginx -t || :
-invoke-rc.d nginx restart || { journalctl -n all -xu nginx.service; exit 77; }
+nginx -t
+invoke-rc.d nginx restart
 
 out=`curl --fail -w "response_code: %{http_code}\n" http://127.0.0.1/t`
 
