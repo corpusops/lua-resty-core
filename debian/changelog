@@ -2,31 +2,31 @@ lua-resty-core (0.1.24-3ppa-nginx-16) jammy; urgency=medium
 
   * packaging for jammy
 
- -- kiorky <kiorky@cryptelium.net>  Sat, 01 Oct 2022 19:29:14 +0200
+ -- kiorky <freesoftware@makina-corpus.com>  Sat, 01 Oct 2022 19:29:14 +0200
 
 lua-resty-core (0.1.24-3ppa-nginx-15) jammy; urgency=medium
 
   * packaging for focal
 
- -- kiorky <kiorky@cryptelium.net>  Sat, 01 Oct 2022 19:29:12 +0200
+ -- kiorky <freesoftware@makina-corpus.com>  Sat, 01 Oct 2022 19:29:12 +0200
 
 lua-resty-core (0.1.24-3ppa-nginx-14) focal; urgency=medium
 
   * packaging for bionic
 
- -- kiorky <kiorky@cryptelium.net>  Sat, 01 Oct 2022 19:29:11 +0200
+ -- kiorky <freesoftware@makina-corpus.com>  Sat, 01 Oct 2022 19:29:11 +0200
 
 lua-resty-core (0.1.24-3ppa-nginx-13) bionic; urgency=medium
 
   * packaging for xenial
 
- -- kiorky <kiorky@cryptelium.net>  Sat, 01 Oct 2022 19:29:09 +0200
+ -- kiorky <freesoftware@makina-corpus.com>  Sat, 01 Oct 2022 19:29:09 +0200
 
 lua-resty-core (0.1.24-3ppa-nginx-12) xenial; urgency=medium
 
   * packaging for jammy
 
- -- kiorky <kiorky@cryptelium.net>  Sat, 01 Oct 2022 19:24:12 +0200
+ -- kiorky <freesoftware@makina-corpus.com>  Sat, 01 Oct 2022 19:24:12 +0200
 
 lua-resty-core (0.1.24-3) xenial; urgency=medium
 
